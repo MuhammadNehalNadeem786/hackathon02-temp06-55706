@@ -10,14 +10,14 @@ import p7 from "../assets/image 7.png";
 import p8 from "../assets/image 8.png";
 
 const products = [
-    { name: "Syltherine", desc: "Stylish cafe chair", price: "Rp 2.500.000", oldPrice: "Rp 3.500.000", discount: "30%", image: p1 },
-    { name: "Leviosa", desc: "Stylish cafe chair", price: "Rp 2.500.000", image: p2 },
-    { name: "Lolito", desc: "Luxury big sofa", price: "Rp 7.000.000", oldPrice: "Rp 14.000.000", discount: "50%", image: p3 },
-    { name: "Respira", desc: "Outdoor bar table and stool", price: "Rp 500.000", new: true, image: p4 },
-    { name: "Grifo", desc: "Night lamp", price: "Rp 1.500.000", image: p5 },
-    { name: "Muggo", desc: "Small mug", price: "Rp 150.000", new: true, image: p6 },
-    { name: "Pingky", desc: "Cute bed set", price: "Rp 7.000.000", oldPrice: "Rp 14.000.000", discount: "50%", image: p7 },
-    { name: "Potty", desc: "Minimalist flower pot", price: "Rp 500.000", new: true, image: p8 },
+    { name: "Syltherine", desc: "Stylish cafe chair", price: "Rp 2.500.000", oldPrice: "Rp 3.500.000", discount: "30%", image: p1.src },
+    { name: "Leviosa", desc: "Stylish cafe chair", price: "Rp 2.500.000", image: p2.src },
+    { name: "Lolito", desc: "Luxury big sofa", price: "Rp 7.000.000", oldPrice: "Rp 14.000.000", discount: "50%", image: p3.src },
+    { name: "Respira", desc: "Outdoor bar table and stool", price: "Rp 500.000", new: true, image: p4.src },
+    { name: "Grifo", desc: "Night lamp", price: "Rp 1.500.000", image:p5.src },
+    { name: "Muggo", desc: "Small mug", price: "Rp 150.000", new: true, image: p6.src },
+    { name: "Pingky", desc: "Cute bed set", price: "Rp 7.000.000", oldPrice: "Rp 14.000.000", discount: "50%", image: p7.src },
+    { name: "Potty", desc: "Minimalist flower pot", price: "Rp 500.000", new: true, image: p8.src },
 ];
 
 const Product = () => {
