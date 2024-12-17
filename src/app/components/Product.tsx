@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import p1 from "../assets/image1.png";
-import p2 from "../assets/image2.png";
-import p3 from "../assets/image3.png";
-import p4 from "../assets/image4.png";
-import p5 from "../assets/image5.png";
-import p6 from "../assets/image6.png";
-import p7 from "../assets/image7.png";
-import p8 from "../assets/image8.png";
+import p1 from "@/app/assets/image1.png";
+import p2 from "@/app/assets/image2.png";
+import p3 from "@/app/assets/image3.png";
+import p4 from "@/app/assets/image4.png";
+import p5 from "@/app/assets/image5.png";
+import p6 from "@/app/assets/image6.png";
+import p7 from "@/app/assets/image7.png";
+import p8 from "@/app/assets/image8.png";
 
 const products = [
     { name: "Syltherine", desc: "Stylish cafe chair", price: "Rp 2.500.000", oldPrice: "Rp 3.500.000", discount: "30%", image: p1.src },
