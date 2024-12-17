@@ -1,22 +1,22 @@
 import React from "react";
 import ProductCard from "./Cards";
 import Image from "next/image";
-import img_1 from "../assets/image 1.png"
-import img_2 from "../assets/image 2.png"
-import img_3 from "../assets/image 3.png"
-import img_4 from "../assets/image 4.png"
-import img_5 from "../assets/image 5.png"
-import img_6 from "../assets/image 6.png"
-import img_7 from "../assets/image 7.png"
-import img_8 from "../assets/image 8.png"
-import img_9 from "../assets/image 1.png"
-import img_10 from "../assets/image 2.png"
-import img_11 from "../assets/image 3.png"
-import img_12 from "../assets/image 4.png"
-import img_13 from "../assets/image 5.png"
-import img_14 from "../assets/image 6.png"
-import img_15 from "../assets/image 7.png"
-import img_16 from "../assets/image 8.png"
+import img_1 from "../assets/image1.png"
+import img_2 from "../assets/image2.png"
+import img_3 from "../assets/image3.png"
+import img_4 from "../assets/image4.png"
+import img_5 from "../assets/image5.png"
+import img_6 from "../assets/image6.png"
+import img_7 from "../assets/imag7.png"
+import img_8 from "../assets/image8.png"
+import img_9 from "../assets/image1.png"
+import img_10 from "../assets/image2.png"
+import img_11 from "../assets/image3.png"
+import img_12 from "../assets/image4.png"
+import img_13 from "../assets/image5.png"
+import img_14 from "../assets/image6.png"
+import img_15 from "../assets/image7.png"
+import img_16 from "../assets/image8.png"
 
 import { StaticImageData } from "next/image";
 
