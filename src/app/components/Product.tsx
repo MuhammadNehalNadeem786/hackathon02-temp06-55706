@@ -1,23 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import p1 from "@/app/assets/image1.png";
-import p2 from "@/app/assets/image2.png";
-import p3 from "@/app/assets/image3.png";
-import p4 from "@/app/assets/image4.png";
-import p5 from "@/app/assets/image5.png";
-import p6 from "@/app/assets/image6.png";
-import p7 from "@/app/assets/image7.png";
-import p8 from "@/app/assets/image8.png";
 
 const products = [
-    { name: "Syltherine", desc: "Stylish cafe chair", price: "Rp 2.500.000", oldPrice: "Rp 3.500.000", discount: "30%", image: p1.src },
-    { name: "Leviosa", desc: "Stylish cafe chair", price: "Rp 2.500.000", image: p2.src },
-    { name: "Lolito", desc: "Luxury big sofa", price: "Rp 7.000.000", oldPrice: "Rp 14.000.000", discount: "50%", image: p3.src },
-    { name: "Respira", desc: "Outdoor bar table and stool", price: "Rp 500.000", new: true, image: p4.src },
-    { name: "Grifo", desc: "Night lamp", price: "Rp 1.500.000", image:p5.src },
-    { name: "Muggo", desc: "Small mug", price: "Rp 150.000", new: true, image: p6.src },
-    { name: "Pingky", desc: "Cute bed set", price: "Rp 7.000.000", oldPrice: "Rp 14.000.000", discount: "50%", image: p7.src },
-    { name: "Potty", desc: "Minimalist flower pot", price: "Rp 500.000", new: true, image: p8.src },
+    { name: "Syltherine", desc: "Stylish cafe chair", price: "Rp 2.500.000", oldPrice: "Rp 3.500.000", discount: "30%", image: "../assets/image1.png" },
+    { name: "Leviosa", desc: "Stylish cafe chair", price: "Rp 2.500.000", image: "../assets/image5.png" },
+    { name: "Lolito", desc: "Luxury big sofa", price: "Rp 7.000.000", oldPrice: "Rp 14.000.000", discount: "50%", image: "../assets/image2.png" },
+    { name: "Respira", desc: "Outdoor bar table and stool", price: "Rp 500.000", new: true, image: "../assets/image3.png" },
+    { name: "Grifo", desc: "Night lamp", price: "Rp 1.500.000", image: "../assets/image5.png" },
+    { name: "Muggo", desc: "Small mug", price: "Rp 150.000", new: true, image: "../assets/image8.png" },
+    { name: "Pingky", desc: "Cute bed set", price: "Rp 7.000.000", oldPrice: "Rp 14.000.000", discount: "50%", image: "../assets/image1.png" },
+    { name: "Potty", desc: "Minimalist flower pot", price: "Rp 500.000", new: true, image: "../assets/imag7.png" },
 ];
 
 const Product = () => {

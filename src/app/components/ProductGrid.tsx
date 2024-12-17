@@ -1,22 +1,5 @@
 import React from "react";
 import ProductCard from "./Cards";
-import Image from "next/image";
-import img_1 from "@/app/assets/image1.png"
-import img_2 from "@/app/assets/image2.png"
-import img_3 from "@/app/assets/image3.png"
-import img_4 from "@/app/assets/image4.png"
-import img_5 from "@/app/assets/image5.png"
-import img_6 from "@/app/assets/image6.png"
-import img_7 from "@/app/assets/image7.png"
-import img_8 from "@/app/assets/image8.png"
-import img_9 from "@/app/assets/image2.png"
-import img_10 from "@/app/assets/image1.png"
-import img_11 from "@/app/assets/image3.png"
-import img_12 from "@/app/assets/image4.png"
-import img_13 from "@/app/assets/image6.png"
-import img_14 from "@/app/assets/image7.png"
-import img_15 from "@/app/assets/image5.png"
-import img_16 from "@/app/assets/image3.png"
 
 import { StaticImageData } from "next/image";
 
@@ -34,20 +17,20 @@ interface ProductCardProps {
 
 const products = [
     {
-        image: img_1.src,
+        image: "../assets/image1.png",
         title: "Syltherine",
         description: "Stylish cafe chair",
         price: "Rp 2.500.000",
         Discount: true,
     },
     {
-        image: img_2.src,
+        image: "../assets/image1.png",
         title: "Leviosa",
         description: "Luxury big sofa",
         price: "Rp 3.500.000",
     },
     {
-        image: img_3.src,
+        image: "@/app/assets/image3.png",
         title: "Lolito",
         description: "Luxury big sofa",
         price: "Rp 7.000.000",
@@ -55,27 +38,27 @@ const products = [
         MegaSale: true,
     },
     {
-        image: img_4.src,
+        image: "@/app/assets/image4.png",
         title: "Respira",
         description: "Outdoor bar table and stool",
         price: "Rp 500.000",
         isNew: true,
     },
     {
-        image: img_5.src,
+        image: "@/app/assets/image5.png",
         title: "Syltherine",
         description: "Stylish cafe chair",
         price: "Rp 2.500.000",
         Discount: true,
     },
     {
-        image: img_6.src,
+        image: "@/app/assets/image6.png",
         title: "Leviosa",
         description: "Luxury big sofa",
         price: "Rp 3.500.000",
     },
     {
-        image: img_7.src,
+        image: "@/app/assets/image7.png",
         title: "Lolito",
         description: "Luxury big sofa",
         price: "Rp 7.000.000",
@@ -83,27 +66,27 @@ const products = [
         MegaSale: true,
     },
     {
-        image: img_8.src,
+        image: "@/app/assets/image8.png",
         title: "Respira",
         description: "Outdoor bar table and stool",
         price: "Rp 500.000",
         isNew: true,
     },
     {
-        image: img_9.src,
+        image: "@/app/assets/image1.png",
         title: "Syltherine",
         description: "Stylish cafe chair",
         price: "Rp 2.500.000",
         Discount: true,
     },
     {
-        image: img_10.src,
+        image: "@/app/assets/image2.png",
         title: "Leviosa",
         description: "Luxury big sofa",
         price: "Rp 3.500.000",
     },
     {
-        image: img_11.src,
+        image: "@/app/assets/image3.png",
         title: "Lolito",
         description: "Luxury big sofa",
         price: "Rp 7.000.000",
@@ -111,27 +94,27 @@ const products = [
         MegaSale: true,
     },
     {
-        image: img_12.src,
+        image: "@/app/assets/image4.png",
         title: "Respira",
         description: "Outdoor bar table and stool",
         price: "Rp 500.000",
         isNew: true,
     },
     {
-        image: img_13.src,
+        image: "@/app/assets/image5.png",
         title: "Syltherine",
         description: "Stylish cafe chair",
         price: "Rp 2.500.000",
         Discount: true,
     },
     {
-        image: img_14.src,
+        image: "@/app/assets/image6.png",
         title: "Leviosa",
         description: "Luxury big sofa",
         price: "Rp 3.500.000",
     },
     {
-        image: img_15.src,
+        image: "@/app/assets/image7.png",
         title: "Lolito",
         description: "Luxury big sofa",
         price: "Rp 7.000.000",
@@ -139,7 +122,7 @@ const products = [
         MegaSale: true,
     },
     {
-        image: img_16.src,
+        image: "@/app/assets/image3.png",
         title: "Respira",
         description: "Outdoor bar table and stool",
         price: "Rp 500.000",
