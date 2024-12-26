@@ -7,9 +7,9 @@ import Footer from "../components/Footer"
 import Cards from "../components/Cards"
 import ProductGrid from "../components/ProductGrid"
 
-import vector_1 from "../assets/vector 1.png"
-import vector_2 from "../assets/vector 2.png"
-import vector_3 from "../assets/vector 3.png"
+import vector_1 from "../images/vector 1.png"
+import vector_2 from "../images/vector 2.png"
+import vector_3 from "../images/vector 3.png"
 
 const ShopPage = () => {
     return (

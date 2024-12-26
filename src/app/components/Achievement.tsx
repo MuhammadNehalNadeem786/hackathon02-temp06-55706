@@ -1,8 +1,8 @@
 import React from 'react'
-import Trophy from '../assets/trophy 1.png'
-import Quility from '../assets/guarantee.png'
-import shiping from '../assets/shipping.png'
-import support from '../assets/customer-support.png'
+import Trophy from '../images/trophy 1.png'
+import Quility from '../images/guarantee.png'
+import shiping from '../images/shipping.png'
+import support from '../images/customer-support.png'
 import Image from 'next/image'
 const Acheivement = () => {
     return (

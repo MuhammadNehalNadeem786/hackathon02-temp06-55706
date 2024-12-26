@@ -1,15 +1,24 @@
 import React from "react";
 import Image from "next/image";
 
+import img_1 from "@/app/images/image1.png"
+import img_2 from "@/app/images/image2.png"
+import img_3 from "@/app/images/image3.png"
+import img_4 from "@/app/images/image4.png"
+import img_5 from "@/app/images/Image5.png"
+import img_6 from "@/app/images/image6.png"
+import img_7 from "@/app/images/image7.png"
+import img_8 from "@/app/images/image8.png"
+
 const products = [
-    { name: "Syltherine", desc: "Stylish cafe chair", price: "Rp 2.500.000", oldPrice: "Rp 3.500.000", discount: "30%", image: "../assets/image1.png" },
-    { name: "Leviosa", desc: "Stylish cafe chair", price: "Rp 2.500.000", image: "../assets/image5.png" },
-    { name: "Lolito", desc: "Luxury big sofa", price: "Rp 7.000.000", oldPrice: "Rp 14.000.000", discount: "50%", image: "../assets/image2.png" },
-    { name: "Respira", desc: "Outdoor bar table and stool", price: "Rp 500.000", new: true, image: "../assets/image3.png" },
-    { name: "Grifo", desc: "Night lamp", price: "Rp 1.500.000", image: "../assets/image5.png" },
-    { name: "Muggo", desc: "Small mug", price: "Rp 150.000", new: true, image: "../assets/image8.png" },
-    { name: "Pingky", desc: "Cute bed set", price: "Rp 7.000.000", oldPrice: "Rp 14.000.000", discount: "50%", image: "../assets/image1.png" },
-    { name: "Potty", desc: "Minimalist flower pot", price: "Rp 500.000", new: true, image: "../assets/imag7.png" },
+    { title: "Syltherine", description: "Stylish cafe chair", price: "Rp 2.500.000", oldPrice: "Rp 3.500.000", discount: "30%", img: img_1 },
+    { title: "Leviosa", description: "Stylish cafe chair", price: "Rp 2.500.000", img: img_2 },
+    { title: "Lolito", description: "Luxury big sofa", price: "Rp 7.000.000", oldPrice: "Rp 14.000.000", discount: "50%", img: img_3 },
+    { title: "Respira", description: "Outdoor bar table and stool", price: "Rp 500.000", new: true, img: img_4 },
+    { title: "Grifo", description: "Night lamp", price: "Rp 1.500.000", img: img_5 },
+    { title: "Muggo", description: "Small mug", price: "Rp 150.000", new: true, img: img_6 },
+    { title: "Pingky", description: "Cute bed set", price: "Rp 7.000.000", oldPrice: "Rp 14.000.000", discount: "50%", img: img_7 },
+    { title: "Potty", description: "Minimalist flower pot", price: "Rp 500.000", new: true, img: img_8 },
 ];
 
 const Product = () => {
@@ -35,13 +44,13 @@ const Product = () => {
 
                         <div className="h-48 flex justify-center items-center relative">
                             <Image
-                                src={product.image}
-                                alt={product.name}
+                                src={product.img}
+                                alt={product.title}
                                 className="h-full w-full object-cover"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                                 <div className="space-y-3 px-4">
-                                    <button className="w-full bg-white text-gray-900 py-2 rounded hover:bg-gray-100 transition-colors">
+                                    <button className="w-full bg-yellow-500 text-black py-2 rounded hover:bg-yellow-600 transition-colors">
                                         Add to cart
                                     </button>
 
@@ -61,8 +70,8 @@ const Product = () => {
                         </div>
 
                         <div className="p-4">
-                            <h2 className="font-bold text-lg truncate">{product.name}</h2>
-                            <p className="text-sm text-gray-600 truncate">{product.desc}</p>
+                            <h2 className="font-bold text-lg truncate">{product.title}</h2>
+                            <p className="text-sm text-gray-600 truncate">{product.description}</p>
                             <div className="mt-2">
                                 <span className="text-lg font-semibold text-black">{product.price}</span>
                                 {product.oldPrice && (

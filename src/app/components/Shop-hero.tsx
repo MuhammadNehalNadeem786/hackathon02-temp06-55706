@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import rectang_img from "../assets/Rectangle 1.png"
+import rectang_img from "../images/Rectangle 1.png"
 
 const ShopHeader = () => {
     return (

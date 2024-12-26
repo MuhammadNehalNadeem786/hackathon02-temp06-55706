@@ -1,7 +1,7 @@
 import Image from "next/image";
-import dinning from "../assets/dinning.png"
-import living from "../assets/living.png"
-import bedroom from "../assets/bedroom.png"
+import dinning from "../images/dinning.png"
+import living from "../images/living.png"
+import bedroom from "../images/bedroom.png"
 
 const BrowseTheRange = () => {
     return (

@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../assets/logo.png"
-import Account from "../assets/account.png"
-import Search from "../assets/search-icon.png"
-import Heart from "../assets/heart-icon.png"
-import Cart from "../assets/shopping-cart.png"
+import Logo from "../images/logo.png"
+import Account from "../images/account.png"
+import Search from "../images/search-icon.png"
+import Heart from "../images/heart-icon.png"
+import Cart from "../images/shopping-cart.png"
 
 const Header = () => {
     return (

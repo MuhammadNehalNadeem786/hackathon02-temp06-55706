@@ -1,11 +1,12 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface ProductCardProps {
-  image: string;
+  img: string | StaticImageData;
   title: string;
-  description: string;
-  price: string;
+  description?: string;
+  price?: string;
+  oldPrice?: string;
   salePrice?: string;
   MegaSale?: boolean;
   isNew?: boolean;
@@ -13,7 +14,7 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
-  image,
+  img,
   title,
   description,
   price,
@@ -26,7 +27,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     <div className="relative group bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300">
       {/* Image */}
       <div className="relative w-full h-56">
-        <Image src={image} alt={title} layout="fill" objectFit="cover" />
+        <Image src={img} alt={title} fill objectFit="cover" />
         {/* Sale or New Badge */}
         {MegaSale && (
           <span className="absolute top-3 right-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded-full">

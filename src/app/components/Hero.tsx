@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg_image from "../assets/background-img.png"
+import bg_image from "../images/background-img.png"
 const Hero = () => {
     return (
         <div className="relative">

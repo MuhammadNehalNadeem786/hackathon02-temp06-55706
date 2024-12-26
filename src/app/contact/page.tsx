@@ -4,9 +4,9 @@ import Header from "../components/Header";
 import Contact_Hero from "../components/Contact_Hero";
 import Acheivement from "../components/Achievement"
 import Footer from "../components/Footer"
-import location from "../assets/location_icon.png"
-import phone from "../assets/phone_icon.png"
-import clock from "../assets/clock_icon.png"
+import location from "../images/location_icon.png"
+import phone from "../images/phone_icon.png"
+import clock from "../images/clock_icon.png"
 
 const ContactPage = () => {
   return (

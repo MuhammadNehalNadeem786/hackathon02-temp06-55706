@@ -1,11 +1,11 @@
 import Image from "next/image";
-// import gallery from "../assets/Fur-Gallery.png"
-import tv from "../assets/t.v.png"
-import bed from "../assets/bed.png"
-import table from "../assets/table.png"
-import jug from "../assets/jug.png"
-import flowers from "../assets/flowers.png"
-import chair from "../assets/Rectangle 37.png"
+// import gallery from "../images/Fur-Gallery.png"
+import tv from "../images/t.v.png"
+import bed from "../images/bed.png"
+import table from "../images/table.png"
+import jug from "../images/jug.png"
+import flowers from "../images/flowers.png"
+import chair from "../images/Rectangle 37.png"
 const Furniture = () => {
     return (
         <section className="py-16 bg-[#f9fafb]">

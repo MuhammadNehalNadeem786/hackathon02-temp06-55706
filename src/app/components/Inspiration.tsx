@@ -1,7 +1,7 @@
 import Image from "next/image";
-import room1 from "../assets/room1.png"
-import room2 from "../assets/room2.png"
-import indicator from "../assets/Indicator.png"
+import room1 from "../images/room1.png"
+import room2 from "../images/room2.png"
+import indicator from "../images/Indicator.png"
 const RoomIspirations = () => {
     return (
         <div>

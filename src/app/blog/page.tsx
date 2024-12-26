@@ -5,16 +5,16 @@ import Blog_Hero from "../components/Blog_Hero";
 import Acheivement from "../components/Achievement"
 import Footer from "../components/Footer"
 
-import blog_image_1 from "../assets/blog_img 1.png"
-import blog_image_2 from "../assets/blog_img 2.png"
-import blog_image_3 from "../assets/blog_img 3.png"
-import search_icon from "../assets/search-icon.png"
+import blog_image_1 from "../images/blog_img 1.png"
+import blog_image_2 from "../images/blog_img 2.png"
+import blog_image_3 from "../images/blog_img 3.png"
+import search_icon from "../images/search-icon.png"
 
-import post1 from "../assets/Post 1.png"
-import post2 from "../assets/Post 2.png"
-import post3 from "../assets/Post 3.png"
-import post4 from "../assets/Post 4.png"
-import post5 from "../assets/Post 5.png"
+import post1 from "../images/Post 1.png"
+import post2 from "../images/Post 2.png"
+import post3 from "../images/Post 3.png"
+import post4 from "../images/Post 4.png"
+import post5 from "../images/Post 5.png"
 
 const BlogPage = () => {
   return (
