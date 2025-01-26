@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import gallery from "../images/Fur-Gallery.png"
 import tv from "../images/t.v.png"
 import bed from "../images/bed.png"
 import table from "../images/table.png"

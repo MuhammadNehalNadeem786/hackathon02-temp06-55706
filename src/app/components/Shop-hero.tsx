@@ -7,7 +7,7 @@ const ShopHeader = () => {
         <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px]">
                 {/* Background Image */}
                 <Image
-                    src={rectang_img} // Replace with your image path
+                    src={rectang_img} 
                     alt="Shop Background"
                     width={1440}
                     height={316}

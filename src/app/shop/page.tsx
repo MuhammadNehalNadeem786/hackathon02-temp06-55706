@@ -4,7 +4,6 @@ import ShopHeader from "../components/Shop-hero"
 import Header from "../components/Header";
 import Acheivement from "../components/Achievement"
 import Footer from "../components/Footer"
-import Cards from "../components/Cards"
 import ProductGrid from "../components/ProductGrid"
 
 import vector_1 from "../images/vector 1.png"
@@ -17,7 +16,6 @@ const ShopPage = () => {
             {/* Shop Header Component */}
             <Header/>
             <ShopHeader />
-
 
             {/* <Cards /> */}
 

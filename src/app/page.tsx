@@ -1,21 +1,20 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import BrowseTheRange from "./components/SubHero"
-import Product from "./components/Product"
 import RoomIspirations from "./components/Inspiration"
+import ProductGrid from "@/app/components/ProductGrid"
 import Furniture from "./components/Furniture-Furno"
 import Footer from "./components/Footer"
-
 
 const Home=()=>{
   return (
     <div>
-      <Header />
-      <Hero />
+      <Header/>
+      <Hero/>
       <BrowseTheRange />
-      <Product/>
+      <ProductGrid />
       <RoomIspirations/>
-      <Furniture />
+      <Furniture/>
       <Footer/>
     </div>
   )
