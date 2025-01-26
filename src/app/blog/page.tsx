@@ -175,6 +175,7 @@ const BlogPage = () => {
                   <p className="text-gray-500 text-xs">14 Oct 2022</p>
                 </div>
               </li>
+
               <li className="flex items-start gap-4">
                 <Image
                   src={post2}
@@ -188,6 +189,7 @@ const BlogPage = () => {
                   <p className="text-gray-500 text-xs">03 Aug 2022</p>
                 </div>
               </li>
+
               <li className="flex items-start gap-4">
                 <Image
                   src={post3}
@@ -215,6 +217,7 @@ const BlogPage = () => {
                   <p className="text-gray-500 text-xs">14 Oct 2022</p>
                 </div>
               </li>
+              
               <li className="flex items-start gap-4">
                 <Image
                   src={post5}
