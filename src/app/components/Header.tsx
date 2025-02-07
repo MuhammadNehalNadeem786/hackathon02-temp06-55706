@@ -7,7 +7,6 @@ import Search from "../images/search-icon.png";
 import Heart from "../images/heart-icon.png";
 import Cart from "../images/shopping-cart.png";
 import SearchBar from "./SearchBar";
-// import CartBtn from "./CartBtn";
 
 const Header = () => {
     return (
@@ -36,11 +35,15 @@ const Header = () => {
                 </nav>
 
                 {/* Icons Section */}
-                <div className="items-center space-x-4 text-gray-700 flex justify-center md:justify-between w-full md:w-1/3 px-4 md:px-16 gap-4 md:gap-0">
-                    <div className="hover:text-yellow-500">
-                        <span className="sr-only">User Account</span>
-                        <Image src={Account} alt="User Account" width={30} height={30} className="cursor-pointer hover:scale-105" />
-                    </div>
+
+                <div className="items-center space-x-2 text-gray-700 flex justify-center md:justify-between w-full md:w-1/3 px-4 md:px-4 gap-4 md:gap-0">
+
+                    <Link href={`/login`}>
+                        <div className="hover:text-yellow-500">
+                            <span className="sr-only">User Account</span>
+                            <Image src={Account} alt="User Account" width={40} height={40} className="cursor-pointer hover:scale-105" />
+                        </div>
+                    </Link>
 
                     <div className="bg-slate-100 flex items-center w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-md px-2 relative">
                         <SearchBar />
@@ -48,16 +51,17 @@ const Header = () => {
 
                     <div className="hover:text-yellow-500">
                         <span className="sr-only">Favorites</span>
-                        <Image src={Heart} alt="Favorites" width={30} height={30} className="cursor-pointer hover:scale-105" />
+                        <Image src={Heart} alt="Favorites" width={40} height={40} className="cursor-pointer hover:scale-105" />
                     </div>
                     <div className="hover:text-yellow-500">
                         <Link href={`/cart`}>
                             <button className="sr-only">Cart</button>
-                             <Image src={Cart} alt="Cart" width={30} height={30} className="cursor-pointer hover:scale-105" />
+                            <Image src={Cart} alt="Cart" width={40} height={40} className="cursor-pointer hover:scale-105" />
                         </Link>
-                        {/* <CartBtn/> */}
                     </div>
+
                 </div>
+                
             </div>
 
             {/* Mobile Navigation */}
