@@ -1,15 +1,14 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import { z } from "zod";
 import Header from "../components/Header";
 import CheckoutHero from "../components/CheckoutHero";
 import Achievement from "../components/Achievement";
 import Footer from "../components/Footer";
-
 import { ProductType } from "@/types/product.types";
 import { useCart } from "@/context/cartContext";
 
-/* Zod schema for form validation */
 const billingSchema = z.object({
     firstName: z.string().min(1, "First name is required"),
     lastName: z.string().min(1, "Last name is required"),
@@ -23,11 +22,9 @@ const billingSchema = z.object({
 });
 
 const BillingPage = () => {
-    const { cart, removeFromCart } = useCart();
-    const [products, setProducts] = useState<ProductType[]>(cart);
+    const { cart } = useCart();
     const [isProcessing, setIsProcessing] = useState(false);
     const [paymentSuccess, setPaymentSuccess] = useState(false);
-
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -42,17 +39,21 @@ const BillingPage = () => {
     const [formErrors, setFormErrors] = useState<{ [key: string]: string }>({});
 
     useEffect(() => {
-        setProducts(cart);
-    }, [cart]);
+        if (paymentSuccess) {
+            const timer = setTimeout(() => {
+                setPaymentSuccess(false);
+            }, 3000);
+            return () => clearTimeout(timer);
+        }
+    }, [paymentSuccess]);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({ ...prevData, [name]: value }));
-        setFormErrors((prevErrors) => ({ ...prevErrors, [name]: "" })); 
+        setFormErrors((prevErrors) => ({ ...prevErrors, [name]: "" }));
     };
 
     const handleBuyAndPlaceOrder = () => {
-        /* Form data with Zod */
         const result = billingSchema.safeParse(formData);
 
         if (!result.success) {
@@ -66,13 +67,9 @@ const BillingPage = () => {
 
         setIsProcessing(true);
 
-        /* Simulate processing time */
         setTimeout(() => {
             setIsProcessing(false);
             setPaymentSuccess(true);
-            setTimeout(() => {
-                setPaymentSuccess(false);
-            }, 3000);
         }, 2000);
     };
 
@@ -86,7 +83,6 @@ const BillingPage = () => {
                     <div className="lg:col-span-2">
                         <h2 className="text-2xl font-semibold mb-6">Billing details</h2>
                         <form className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            {/* Dynamically render form fields */}
                             {[
                                 { label: "First Name", name: "firstName", type: "text" },
                                 { label: "Last Name", name: "lastName", type: "text" },
@@ -139,6 +135,7 @@ const BillingPage = () => {
                                 {cart.reduce((sum, product) => sum + parseFloat(product?.price!) * product.quantity, 0).toFixed(2)}
                             </h6>
                         </div>
+
                         <div className="my-6">
                             <label className="flex items-start space-x-2">
                                 <input
@@ -151,16 +148,31 @@ const BillingPage = () => {
                                 Your personal data will be used to support your experience throughout this website.
                             </p>
                         </div>
+
                         <button
                             onClick={handleBuyAndPlaceOrder}
                             disabled={isProcessing}
                             className={`w-full ${isProcessing ? "bg-gray-400 cursor-pointer" : "bg-indigo-700 text-white"
-                                } text-white py-3 rounded-md text-sm font-medium hover:bg-indigo-800`}
+                                } py-3 rounded-md text-sm font-medium hover:bg-indigo-800 `}
                         >
-                            Place Order
+                            {isProcessing ? "Processing..." : "Place Order"}
                         </button>
                     </div>
                 </div>
+                {paymentSuccess && (
+                    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                        <div className="bg-white p-6 rounded-md shadow-lg text-center">
+                            <h2 className="text-xl font-semibold text-gray-800">✨ Payment Successful!</h2>
+                            <p className="text-gray-600 mt-2 text-sm">
+                                Thank you for your order! Your purchase has been placed successfully.
+                            </p>
+                            <p className="text-gray-600 mt-2 text-sm">We will keep you updated and notify you once your item has been shipped.. 🚚📦</p>
+                            <button className="mt-4 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
+                                Continue Shopping 🛒
+                            </button>
+                        </div>
+                    </div>
+                )}
                 <Achievement />
                 <Footer />
             </div>

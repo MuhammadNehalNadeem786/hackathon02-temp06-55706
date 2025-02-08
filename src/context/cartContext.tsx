@@ -14,6 +14,7 @@ export const CartContext = createContext<CartContextProps | undefined>(undefined
 
 export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const [cart, setCart] = useState<CartItem[]>([]);
+    
 
     const addToCart = (product: ProductType, qty?: number) => {
         setCart((prevCart) => {
@@ -60,3 +61,5 @@ export const useCart = (): CartContextProps => {
     }
     return context;
 };
+
+
