@@ -44,11 +44,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
               <button className="flex items-center gap-1 hover:text-gray-200">
                 <span>Share</span>
               </button>
-              <Link href={`/comparison`}>
                 <button className="flex items-center gap-1 hover:text-gray-200">
                   <span>Compare</span>
                 </button>
-              </Link>
               <button className="flex items-center gap-1 hover:text-gray-200">
                 <span>Like</span>
               </button>
